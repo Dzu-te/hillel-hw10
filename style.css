@@ -20,11 +20,11 @@
   padding-inline: auto;
 }
 
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 320px) {
 
   body {
 
-    min-width: 375px;
+    min-width: 320px;
     height: 100vh;
   }
 
