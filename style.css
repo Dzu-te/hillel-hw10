@@ -15,7 +15,7 @@
 }
 
 .container {
-  max-width: 1150px;
+  max-width: 1110px;
   margin-inline: auto;
   padding-inline: auto;
 }
@@ -42,19 +42,23 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    list-style: none;
     gap: 20px;
+
+
+
   }
 
   .header-link-item {
+    text-decoration: none;
     font-family: Roboto;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 26.25px;
     letter-spacing: 0.1em;
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
+    color: black;
   }
 
 
@@ -197,132 +201,105 @@
 
 
 @media screen and (min-width: 1150px) {
-  body {
-    min-width: 1150px;
+  .header {
+    padding-block: 0;
   }
 
+  .header-container {
+    padding-top: 79px;
+    padding-bottom: 141px;
+  }
 
+  .header-list-menu {
+    flex-direction: row;
+    max-width: 1110px;
+  }
 
-  .header-nav {
-    margin-top: 79px;
+  .header-item-menu {
+    margin-right: 41px;
     margin-bottom: 162px;
   }
 
-  .header-nav>.header-list-menu {
-
-    flex-direction: row;
-    justify-content: flex-start;
-    gap: 40px;
-    flex-wrap: wrap;
-  }
-
-
-  .header-link-item {
-    text-decoration: none;
-    color: black;
-  }
-
   .header-link-item:hover {
-    color: #34547A;
+    color: rgba(52, 84, 122, 1);
+    font-weight: 500;
   }
 
+  .header-gen-text {
+    margin-bottom: 60px;
+
+  }
 
   .header-about {
-    text-align: left;
-    max-width: 540px;
     margin-bottom: 65px;
+    width: 540px;
+  }
+
+  .header-button {
+    justify-self: flex-start;
+    margin-bottom: 0;
   }
 
   .main {
-    padding-bottom: 0;
-  }
-
-  .main-title-container {
-    padding-top: 0;
+    padding: 0;
   }
 
   .main-title {
-
-    padding-top: 100px;
+    margin-top: 112px;
     margin-bottom: 50px;
-    margin-top: 0;
   }
 
-  .main-text,
+  .main-text {
+    margin-bottom: 50px;
+    padding-bottom: 0;
+    width: 540px;
+    margin-inline: auto;
+  }
+
+  .secondary-pj-container {
+    margin-bottom: 0;
+  }
+
+  .projects-list {
+    padding: 100px 0 100px 0;
+  }
+
+  .about-me-container {
+    background-color: var(--primary-grey-color);
+  }
+
+  .main-title-container {
+    padding: 0;
+  }
+
+  .main-title-about-me {
+    margin-top: 0;
+    padding-top: 100px;
+  }
+
   .my-work-text {
-    text-align: center;
     width: 540px;
     margin-inline: auto;
     margin-bottom: 57px;
   }
 
-  .pj-container {
-    background-color: var(--secondary-blue-color);
-    width: 100%;
-  }
-
-  .secondary-pj-container {
-    margin-top: 0;
-    padding-top: 0;
-  }
-
-  .projects-list {
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    flex-wrap: wrap;
-    row-gap: 40px;
-  }
-
-  .projects-item {
-    font-family: Roboto;
-    font-size: 21px;
-    font-weight: 500;
-    line-height: 24.61px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-    color: white;
-    background: left no-repeat url(images/project.png);
-    padding-left: 70px;
-  }
-
-  .pj-item-text {
-    text-align: left;
-    color: white;
-    vertical-align: text-bottom;
-  }
-
-  .main-title-container>.video {
-    display: block;
-    margin-inline: auto;
-    margin-bottom: 100px;
+  .video {
     width: 1110px;
-    height: 816px;
+    height: 600px;
+    padding-bottom: 100px;
   }
-
 
 
   .footer {
-    padding-top: 0;
+    padding-block: 0;
+    background-color: var(--secondary-blue-color);
   }
 
   .footer-title {
-    font-family: Roboto;
-    font-size: 21px;
-    font-weight: 500;
-    line-height: 24.61px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
     padding-top: 50px;
-    margin-bottom: 20px;
   }
 
   .footer-text {
     padding-bottom: 50px;
-    color: white;
   }
 }
