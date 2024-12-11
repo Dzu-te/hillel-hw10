@@ -35,15 +35,19 @@
     padding-bottom: 50px;
   }
 
-  .header-nav {
+  .header-container {
+    padding-top: 79px;
+  }
 
+  .header-nav {
     margin-bottom: 30px;
   }
 
   .header-list-menu {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     justify-content: flex-start;
+    flex-wrap: wrap;
     gap: 20px;
 
 
