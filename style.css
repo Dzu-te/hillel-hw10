@@ -23,7 +23,7 @@
 @media screen and (min-width: 375px) {
 
   body {
-    padding: 10px;
+
     min-width: 375px;
     height: 100vh;
   }
@@ -45,11 +45,10 @@
 
   .header-list-menu {
     display: flex;
-    /* flex-direction: column; */
     justify-content: flex-start;
     flex-wrap: wrap;
     gap: 20px;
-
+    max-width: 611px;
 
 
   }
