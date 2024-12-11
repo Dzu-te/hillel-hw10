@@ -30,7 +30,9 @@
 
   .header {
     background-color: var(--primary-grey-color);
-    padding: 20px;
+    padding-inline: 20px;
+    padding-top: 20px;
+    padding-bottom: 50px;
   }
 
   .header-nav {
@@ -84,16 +86,13 @@
     color: white;
     background-color: var(--secondary-blue-color);
     border: 0;
-    margin-bottom: 50px;
     letter-spacing: 0.1em;
     display: flex;
     justify-self: center;
   }
 
 
-  main {
-    padding: 20px;
-  }
+
 
   .main-title {
     font-family: Roboto;
@@ -108,6 +107,7 @@
 
   .main-text {
     padding-bottom: 20px;
+    padding-inline: 20px;
   }
 
   .pj-container {
@@ -118,18 +118,18 @@
   .secondary-pj-container {
     margin-top: 0;
     padding-top: 0;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
   }
 
   .projects-list {
     display: flex;
     justify-content: space-between;
     list-style: none;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     flex-wrap: wrap;
     gap: 20px;
-    padding: 10px;
+    padding-inline: 20px;
   }
 
   .projects-item {
@@ -154,6 +154,7 @@
   .main-title-container {
     background-color: var(--primary-grey-color);
     padding: 20px;
+    padding-bottom: 50px;
   }
 
   .my-work-text {
@@ -170,13 +171,13 @@
 
 
     color: white;
-    padding: 20px;
+    /* padding-inline: 20px; */
   }
 
   .footer-container {
     padding-top: 0;
     background-color: var(--secondary-blue-color);
-    padding-left: 20px;
+    padding-inline: 20px;
   }
 
   .footer-title {
@@ -240,9 +241,7 @@
     margin-bottom: 0;
   }
 
-  .main {
-    padding: 0;
-  }
+
 
   .main-title {
     margin-top: 112px;
@@ -252,8 +251,9 @@
   .main-text {
     margin-bottom: 50px;
     padding-bottom: 0;
-    width: 540px;
+    max-width: 540px;
     margin-inline: auto;
+
   }
 
   .secondary-pj-container {
